@@ -3,6 +3,7 @@ version: "3"
 services:
   web:
     build: .
+    image: ghcr.io/sakura-tel/misskey-v11:latest
     restart: always
     links:
       - db
@@ -13,6 +14,8 @@ services:
     networks:
       - internal_network
       - external_network
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider --proxy=off localhost:3000/health || exit 1"]
     volumes:
       - ./files:/misskey/files
       - ./.config:/misskey/.config
@@ -22,14 +25,18 @@ services:
     image: redis:4.0-alpine
     networks:
       - internal_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
     volumes:
       - ./redis:/data
 
   db:
     restart: always
-    image: postgres:11.2-alpine
+    image: postgres:12.2-alpine
     networks:
       - internal_network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "example-misskey-user"]
     env_file:
       - .config/docker.env
     volumes:
