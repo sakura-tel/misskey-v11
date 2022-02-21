@@ -1873,15 +1873,15 @@ builtin-modules@^1.1.1:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
   integrity sha1-Jw8HbFpywC9bZaR9+Uxf46J4iS8=
 
-bull@4.5.5:
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/bull/-/bull-4.5.5.tgz#6521e514aaff77d3d40f780dd0214e1738c16b32"
-  integrity sha512-4GX9zoDwkSgdITGWUWGb1kwddgffOyeTLxeBzANbXhBGFb5/HypwsMrInyWQ4GmpZG/oM3oQpUqr+KGX8s7K4Q==
+bull@4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/bull/-/bull-4.6.1.tgz#9d387a30414cfc7fa64b4aa16ef9d4971cb6563a"
+  integrity sha512-LjTBDy3Mua7Tz9xYn2kl/HJvwd5qj6XTLiTCXtPyPxP4HtRrixkm7YytKRFwQbOwcfK++1sBrnIp0nb0ePusgw==
   dependencies:
     cron-parser "^4.2.1"
     debuglog "^1.0.0"
     get-port "^5.1.1"
-    ioredis "^4.27.0"
+    ioredis "^4.28.5"
     lodash "^4.17.21"
     msgpackr "^1.5.2"
     p-timeout "^3.2.0"
@@ -4631,10 +4631,10 @@ invert-kv@^1.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
   integrity sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
 
-ioredis@^4.27.0:
-  version "4.27.9"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.27.9.tgz#c27bbade9724f0b8f84c279fb1d567be785ba33d"
-  integrity sha512-hAwrx9F+OQ0uIvaJefuS3UTqW+ByOLyLIV+j0EH8ClNVxvFyH9Vmb08hCL4yje6mDYT5zMquShhypkd50RRzkg==
+ioredis@^4.28.5:
+  version "4.28.5"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.5.tgz#5c149e6a8d76a7f8fa8a504ffc85b7d5b6797f9f"
+  integrity sha512-3GYo0GJtLqgNXj4YhrisLaNNvWSNwSS2wS4OELGfGxH8I69+XfNdnmV1AyN+ZqMh0i7eX+SWjrwFKDBDgfBC1A==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
