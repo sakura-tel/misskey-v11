@@ -8993,10 +8993,10 @@ thenify-all@^1.0.0:
   dependencies:
     any-promise "^1.0.0"
 
-three@0.137.5:
-  version "0.137.5"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.137.5.tgz#a1e34bedd0412f2d8797112973dfadac78022ce6"
-  integrity sha512-rTyr+HDFxjnN8+N/guZjDgfVxgHptZQpf6xfL/Mo7a5JYIFwK6tAq3bzxYYB4Ae0RosDZlDuP+X5aXDXz+XnHQ==
+three@0.140.1:
+  version "0.140.1"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.140.1.tgz#7d752c10f683b4dc2a96b155b51d6ec5a59909dc"
+  integrity sha512-gjTMCfmbXtjD/U1Thw2Lbq4FR6H2kcy7+bd09OSqiPwU5X49va87QC2Kbrdzg8MQvkCbKAagaIbf3m3rCqmcYg==
 
 through2-filter@^3.0.0:
   version "3.0.0"
