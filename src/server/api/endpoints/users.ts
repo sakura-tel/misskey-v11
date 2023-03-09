@@ -66,6 +66,7 @@ export const meta = {
 
 export default define(meta, async (ps, me) => {
 	const query = Users.createQueryBuilder('user');
+	query.where('user.isExplorable = TRUE');
 
 	switch (ps.state) {
 		case 'admin': query.where('user.isAdmin = TRUE'); break;

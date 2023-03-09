@@ -216,6 +216,11 @@ export class User {
 	})
 	public avoidSearchIndex: boolean;
 
+	@Column('boolean', {
+		default: true,
+	})
+	public isExplorable: boolean;
+
 	constructor(data: Partial<User>) {
 		if (data == null) return;
 

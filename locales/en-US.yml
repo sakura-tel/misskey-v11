@@ -828,6 +828,7 @@ common/views/components/profile-editor.vue:
   careful-remote: "Follower requests from remote require approval"
   auto-accept-followed: "Automatically approve follows from the people you follow"
   avoid-search-index: "Avoid search engine index"
+  is-explorable: "Make account visible in \"Explore\""
   advanced: "Other"
   privacy: "Privacy"
   save: "Save"
