@@ -55,8 +55,11 @@
 					<option value="admin">{{ $t('users.state.admin') }}</option>
 					<option value="moderator">{{ $t('users.state.moderator') }}</option>
 					<option value="verified">{{ $t('users.state.verified') }}</option>
+					<option value="premiumed">{{ $t('users.state.premiumed') }}</option>
 					<option value="silenced">{{ $t('users.state.silenced') }}</option>
 					<option value="suspended">{{ $t('users.state.suspended') }}</option>
+					<option value="cat">{{ $t('users.state.cat') }}</option>
+					<option value="bot">{{ $t('users.state.bot') }}</option>
 				</ui-select>
 				<ui-select v-model="origin">
 					<template #label>{{ $t('users.origin.title') }}</template>
