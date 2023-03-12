@@ -4,10 +4,10 @@
 	<div class="popover" :class="{ isMobile: $root.isMobile }" ref="popover">
 		<p v-if="!$root.isMobile">{{ title }}</p>
 		<div class="buttons" ref="buttons" :class="{ showFocus }">
-			<button v-for="(reaction, i) in rs" :key="reaction" @click="react(reaction)" @mouseover="onMouseover" @mouseout="onMouseout" :tabindex="i + 1" :title="/^[a-z]+$/.test(reaction) ? $t('@.reactions.' + reaction) : reaction" v-particle><mk-reaction-icon :reaction="reaction"/></button>
+			<button v-for="(reaction, i) in rs" :key="i" @click="react(reaction)" @mouseover="onMouseover" @mouseout="onMouseout" :tabindex="i + 1" :title="/^[a-z]+$/.test(reaction) ? $t('@.reactions.' + reaction) : reaction" v-particle><mk-reaction-icon :reaction="reaction"/></button>
 		</div>
 		<div v-if="enableEmojiReaction" class="text">
-			<input v-model="text" :placeholder="$t('input-reaction-placeholder')" @keyup.enter="reactText" @input="tryReactText" v-autocomplete="{ model: 'text' }">
+			<input v-model="text" :placeholder="$t('input-reaction-placeholder')" @keyup.enter="reactText" @keydown.esc="close" @input="tryReactText" v-autocomplete="{ model: 'text', noZwsp: true }" ref="text">
 			<button title="Pick" class="emoji" @click="emoji" ref="emoji"><fa :icon="['far', 'laugh']"/></button>
 		</div>
 	</div>
@@ -46,7 +46,8 @@ export default Vue.extend({
 
 	data() {
 		return {
-			rs: this.reactions || this.$store.state.settings.reactions,
+			bases: this.reactions || this.$store.state.settings.reactions,
+			mosts: [],
 			title: this.$t('choose-reaction'),
 			text: null,
 			enableEmojiReaction: false,
@@ -55,6 +56,9 @@ export default Vue.extend({
 	},
 
 	computed: {
+		rs(): any {
+			return this.bases.concat(this.mosts);
+		},
 		keymap(): any {
 			return {
 				'esc': this.close,
@@ -63,16 +67,6 @@ export default Vue.extend({
 				'left|h|shift+tab': this.focusLeft,
 				'right|l|tab': this.focusRight,
 				'down|j': this.focusDown,
-				'1': () => this.react('like'),
-				'2': () => this.react('love'),
-				'3': () => this.react('laugh'),
-				'4': () => this.react('hmm'),
-				'5': () => this.react('surprise'),
-				'6': () => this.react('congrats'),
-				'7': () => this.react('angry'),
-				'8': () => this.react('confused'),
-				'9': () => this.react('rip'),
-				'0': () => this.react('pudding'),
 			};
 		}
 	},
@@ -113,6 +107,8 @@ export default Vue.extend({
 				popover.style.top = y + 'px';
 			}
 
+			if (!this.$root.isMobile && this.$refs.text) this.$refs.text.focus();
+
 			anime({
 				targets: this.$refs.backdrop,
 				opacity: 1,
@@ -130,7 +126,7 @@ export default Vue.extend({
 	},
 
 	methods: {
-		react(reaction) {
+		react(reaction: string) {
 			this.$emit('chosen', reaction);
 		},
 
@@ -141,8 +137,9 @@ export default Vue.extend({
 
 		tryReactText() {
 			if (!this.text) return;
-			if (!this.text.match(emojiRegex)) return;
-			this.reactText();
+			const m = this.text.match(emojiRegex);
+			if (!m) return;
+			this.react(m[1]);
 		},
 
 		async emoji() {
@@ -155,7 +152,8 @@ export default Vue.extend({
 				y: rect.top + window.pageYOffset
 			});
 			vm.$once('chosen', emoji => {
-				this.react(emoji);
+				const m = emoji.match(emojiRegex);
+				this.react(m ? m[1] : emoji);
 			});
 			this.$once('hook:beforeDestroy', () => {
 				vm.close();
@@ -166,7 +164,7 @@ export default Vue.extend({
 			this.title = e.target.title;
 		},
 
-		onMouseout(e) {
+		onMouseout() {
 			this.title = this.$t('choose-reaction');
 		},
 
@@ -274,15 +272,15 @@ export default Vue.extend({
 		> p
 			display block
 			margin 0
-			padding 8px 10px
+			padding 4px 10px
 			font-size 14px
 			color var(--popupFg)
 			border-bottom solid var(--lineWidth) var(--faceDivider)
 			line-height 20px
 
 		> .buttons
-			padding 4px 4px 8px 4px
-			width 216px
+			padding 4px 4px 4px 4px
+			width 240px
 			text-align center
 
 			&.showFocus
@@ -318,7 +316,7 @@ export default Vue.extend({
 					box-shadow inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15)
 
 		> .text
-			width 216px
+			width 240px
 			padding 0 8px 8px 8px
 			color var(--text)
 
