@@ -165,7 +165,7 @@
 		"ts-loader": "9.4.2",
 		"ts-node": "10.9.1",
 		"twemoji-parser": "git+https://github.com/mei23/twemoji-parser.git#15.0.1",
-		"typeorm": "0.2.45",
+		"typeorm": "0.3.15",
 		"typescript": "5.0.4",
 		"ulid": "2.3.0",
 		"uuid": "9.0.0",
