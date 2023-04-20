@@ -92,7 +92,7 @@
 		"json5": "2.2.3",
 		"json5-loader": "4.0.1",
 		"jsonld": "5.2.0",
-		"jsrsasign": "10.5.27",
+		"jsrsasign": "10.8.3",
 		"katex": "0.16.6",
 		"koa": "2.14.2",
 		"koa-bodyparser": "4.4.0",
