@@ -24,7 +24,6 @@
 				<li><router-link to="/dashboard" active-class="active"><fa icon="home" fixed-width/>{{ $t('dashboard') }}</router-link></li>
 				<li><router-link to="/instance" active-class="active" v-if="$store.getters.isAdmin"><fa icon="cog" fixed-width/>{{ $t('instance') }}</router-link></li>
 				<li><router-link to="/queue" active-class="active"><fa :icon="faTasks" fixed-width/>{{ $t('queue') }}</router-link></li>
-				<li><router-link to="/logs" active-class="active"><fa :icon="faStream" fixed-width/>{{ $t('logs') }}</router-link></li>
 				<li><router-link to="/db" active-class="active" v-if="$store.getters.isAdmin"><fa :icon="faDatabase" fixed-width/>{{ $t('db') }}</router-link></li>
 				<li><router-link to="/moderators" active-class="active" v-if="$store.getters.isAdmin"><fa :icon="faHeadset" fixed-width/>{{ $t('moderators') }}</router-link></li>
 				<li><router-link to="/users" active-class="active"><fa icon="users" fixed-width/>{{ $t('users') }}</router-link></li>
@@ -48,7 +47,6 @@
 					<div v-if="page == 'dashboard'"><x-dashboard/></div>
 					<div v-if="page == 'instance'"><x-instance/></div>
 					<div v-if="page == 'queue'"><x-queue/></div>
-					<div v-if="page == 'logs'"><x-logs/></div>
 					<div v-if="page == 'db'"><x-db/></div>
 					<div v-if="page == 'moderators'"><x-moderators/></div>
 					<div v-if="page == 'users'"><x-users/></div>
@@ -76,7 +74,6 @@ import { version } from '../../config';
 import XDashboard from './dashboard.vue';
 import XInstance from './instance.vue';
 import XQueue from './queue.vue';
-import XLogs from './logs.vue';
 import XDb from './db.vue';
 import XModerators from './moderators.vue';
 import XEmoji from './emoji.vue';
@@ -87,7 +84,7 @@ import XAbuse from './abuse.vue';
 import XFederation from './federation.vue';
 import XRelays from "./relays.vue";
 
-import { faHeadset, faArrowLeft, faGlobe, faProjectDiagram, faExclamationCircle, faTasks, faStream, faDatabase } from '@fortawesome/free-solid-svg-icons';
+import { faHeadset, faArrowLeft, faGlobe, faProjectDiagram, faExclamationCircle, faTasks, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faGrin } from '@fortawesome/free-regular-svg-icons';
 
 // Detect the user agent
@@ -100,7 +97,6 @@ export default Vue.extend({
 		XDashboard,
 		XInstance,
 		XQueue,
-		XLogs,
 		XDb,
 		XModerators,
 		XEmoji,
@@ -126,7 +122,6 @@ export default Vue.extend({
 			faProjectDiagram,
 			faExclamationCircle,
 			faTasks,
-			faStream,
 			faDatabase,
 		};
 	},

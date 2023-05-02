@@ -1,11 +1,7 @@
 import * as cluster from 'cluster';
-import * as os from 'os';
 import * as chalk from 'chalk';
 import * as dateformat from 'dateformat';
 import { envOption } from '../env';
-import { getRepository } from 'typeorm';
-import { Log } from '../models/entities/log';
-import { genId } from '../misc/gen-id';
 import config from '../config';
 
 const SyslogPro = require('syslog-pro');
@@ -94,18 +90,6 @@ export default class Logger {
 					null as never;
 
 				send.bind(this.syslogClient)(message).catch(() => {});
-			} else {
-				const Logs = getRepository(Log);
-				Logs.insert({
-					id: genId(),
-					createdAt: new Date(),
-					machine: os.hostname(),
-					worker: worker.toString(),
-					domain: [this.domain].concat(subDomains).map(d => d.name),
-					level: level,
-					message: message.substring(0, 1000), // 1024を超えるとログが挿入できずエラーになり無限ループする
-					data: data,
-				} as Log).catch(() => {});
 			}
 		}
 	}
