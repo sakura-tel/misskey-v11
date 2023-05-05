@@ -1622,6 +1622,13 @@ agent-base@6:
   dependencies:
     debug "4"
 
+agent-base@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-7.0.0.tgz#3424dd96658fbbcc0b090e41aaca2deb9a89f9cf"
+  integrity sha512-awaqsf16R0tAUMxWiVikaBDKrbt0im7XdzPMh3I8TFC097G4ZowjGgLBfXt+tGPsE+1U1FyLBGuWMd/EPVblWg==
+  dependencies:
+    debug "^4.3.4"
+
 ajv-keywords@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
@@ -4837,7 +4844,15 @@ http-headers@^3.0.1:
   dependencies:
     next-line "^1.1.0"
 
-http-proxy-agent@5.0.0, http-proxy-agent@^5.0.0:
+http-proxy-agent@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/http-proxy-agent/-/http-proxy-agent-6.0.0.tgz#be482ebcfea1d9c13e8a756821f813eb1cefca6d"
+  integrity sha512-tmlr1P183cfJxzneOlOnQrv4hMkOBcTow1rjlT3tnaJbJGlz4xnZuOEAvHFfKqX5RhvIxkCABPQHo3tQEj3ouw==
+  dependencies:
+    agent-base "^7.0.0"
+    debug "^4.3.4"
+
+http-proxy-agent@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/http-proxy-agent/-/http-proxy-agent-5.0.0.tgz#5129800203520d434f142bc78ff3c170800f2b43"
   integrity sha512-n2hY8YdoRE1i7r6M0w9DIw5GgZN0G25P8zLCRQ8rjXtTU3vsNFBI/vWK/UIeE6g5MUUz6avwAPXmL6Fy9D/90w==
