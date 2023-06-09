@@ -102,7 +102,7 @@
 		"koa-mount": "4.0.0",
 		"koa-send": "5.0.1",
 		"koa-slow": "2.1.0",
-		"koa-views": "8.0.0",
+		"koa-views": "8.1.0",
 		"langmap": "0.0.16",
 		"loader-utils": "3.2.1",
 		"memoji": "mei23/memoji#15.0.1",
