@@ -9140,10 +9140,10 @@ syslog-pro@1.0.0:
   dependencies:
     moment "^2.22.2"
 
-systeminformation@5.18.15:
-  version "5.18.15"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.18.15.tgz#bedae151bf08de501675fef91363be864b623164"
-  integrity sha512-IS7UFVYDC7kILt/C1I5qYwxddC849uJidzR+56bv/RdpU6deOwXvXa5EgFaRP18TCPBULQj/zrri5++fXC9EGg==
+systeminformation@5.21.10:
+  version "5.21.10"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.21.10.tgz#c9499ea4b88c13602d97ee879850decac6de8d8d"
+  integrity sha512-AUPgLI70zycKM4QhPLj4fPVCx06HLlMKR7deJxkdLpSgnT6VDxP0kXUusrgbI/f8XScf9IMufFPeJ9FGHHeaIg==
 
 syuilo-password-strength@0.0.1:
   version "0.0.1"
