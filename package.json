@@ -222,7 +222,7 @@
 		"@types/koa__router": "8.0.11",
 		"@types/lolex": "5.1.4",
 		"@types/mocha": "10.0.2",
-		"@types/node": "20.5.9",
+		"@types/node": "20.8.5",
 		"@types/node-fetch": "2.6.2",
 		"@types/nodemailer": "6.4.11",
 		"@types/nprogress": "0.2.1",
