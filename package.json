@@ -194,7 +194,7 @@
 		"xev": "2.0.1"
 	},
 	"devDependencies": {
-		"@redocly/openapi-core": "1.0.2",
+		"@redocly/openapi-core": "1.2.1",
 		"@typescript-eslint/eslint-plugin": "5.62.0",
 		"@typescript-eslint/parser": "5.62.0",
 		"@types/bcryptjs": "2.4.5",
