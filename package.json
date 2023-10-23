@@ -249,7 +249,7 @@
 		"@types/webpack": "5.28.3",
 		"@types/webpack-stream": "3.2.14",
 		"@types/websocket": "1.0.8",
-		"eslint": "8.47.0",
+		"eslint": "8.52.0",
 		"eslint-plugin-node": "11.1.0",
 		"mocha": "10.2.0"
 	}
