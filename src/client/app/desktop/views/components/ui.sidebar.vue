@@ -20,6 +20,12 @@
 			<div class="game">
 				<a @click="game"><fa icon="gamepad"/><template v-if="hasGameInvitations"><fa icon="circle"/></template></a>
 			</div>
+			<div class="pages">
+				<router-link to="/i/pages"><fa :icon="faStickyNote"/></router-link>
+			</div>
+			<div class="room">
+				<router-link :to="`/@${ $store.state.i.username }/room`"><fa :icon="faDoorOpen"/></router-link>
+			</div>
 		</div>
 
 		<div class="nav bottom" v-if="$store.getters.isSignedIn">
@@ -62,7 +68,7 @@ import MkDriveWindow from './drive-window.vue';
 import MkMessagingWindow from './messaging-window.vue';
 import MkGameWindow from './game-window.vue';
 import contains from '../../../common/scripts/contains';
-import { faNewspaper, faHashtag } from '@fortawesome/free-solid-svg-icons';
+import { faNewspaper, faHashtag, faStickyNote, faDoorOpen } from '@fortawesome/free-solid-svg-icons';
 
 export default Vue.extend({
 	i18n: i18n('desktop/views/components/ui.sidebar.vue'),
@@ -72,7 +78,7 @@ export default Vue.extend({
 			connection: null,
 			showNotifications: false,
 			searching: false,
-			faNewspaper, faHashtag
+			faNewspaper, faHashtag, faStickyNote, faDoorOpen
 		};
 	},
 
