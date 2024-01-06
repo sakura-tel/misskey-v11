@@ -1,7 +1,6 @@
 import $ from 'cafy';
 import { ID } from '../../../../misc/cafy-id';
 import define from '../../define';
-import { publishAdminStream } from '../../../../services/stream';
 import { ApiError } from '../../error';
 import { getUser } from '../../common/getters';
 import { AbuseUserReports, Users } from '../../../../models';
@@ -74,29 +73,4 @@ export default define(meta, async (ps, me) => {
 		reporterId: me.id,
 		comment: ps.comment
 	});
-
-	// Publish event to moderators
-	setTimeout(async () => {
-		const moderators = await Users.find({
-			where: [{
-				isAdmin: true
-			}, {
-				isModerator: true
-			}]
-		});
-
-		for (const moderator of moderators) {
-			publishAdminStream(moderator.id, 'newAbuseUserReport', {
-				id: report.id,
-				userId: report.userId,
-				reporterId: report.reporterId,
-				comment: report.comment
-			});
-		}
-
-		const meta = await fetchMeta();
-		if (meta.email) {
-			sendEmail(meta.maintainerEmail, 'New abuse report', ps.comment);
-		}
-	}, 1);
 });
