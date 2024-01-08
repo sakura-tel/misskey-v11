@@ -97,7 +97,7 @@
 		"jsonld": "5.2.0",
 		"jsrsasign": "10.9.0",
 		"katex": "0.16.9",
-		"koa": "2.14.2",
+		"koa": "2.15.0",
 		"koa-bodyparser": "4.4.1",
 		"koa-favicon": "2.1.0",
 		"koa-logger": "3.2.1",
