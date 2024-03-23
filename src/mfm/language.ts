@@ -100,8 +100,8 @@ export const mfmLanguage = P.createLanguage({
 	mathInline: () => P.regexp(/\\\((.+?)\\\)/, 1).map(x => createLeaf('mathInline', { formula: x })),
 	mention: () => {
 		return P((input, i) => {
-			const text = input.substring(i);
-			const match = text.match(/^@\w([\w-]*\w)?(?:@[\w.\-]+\w)?/);
+			const text = input.substr(i);
+			const match = text.match(/^@([\w.-]+)(?:@[\w.-]+\w)?/);
 			if (!match) return P.makeFailure(i, 'not a mention');
 			if (input[i - 1] != null && input[i - 1].match(/[a-z0-9]/i)) return P.makeFailure(i, 'not a mention');
 			return P.makeSuccess(i + match[0].length, match[0]);

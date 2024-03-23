@@ -95,9 +95,9 @@ class Autocomplete {
 		let opened = false;
 
 		if (isMention) {
-			const username = text.substring(mentionIndex + 1);
-			if (username != '' && username.match(/^[a-zA-Z0-9_]+$/)) {
-				this.open('user', username);
+			const username = text.substr(mentionIndex + 1);
+			if (username.match(/^[\w.-]+$/)) {
+				this.open('user', username.toLowerCase());
 				opened = true;
 			}
 		}
