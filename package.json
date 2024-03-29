@@ -138,7 +138,7 @@
 		"reconnecting-websocket": "4.4.0",
 		"redis": "3.1.2",
 		"redis-lock": "0.1.4",
-		"reflect-metadata": "0.1.14",
+		"reflect-metadata": "0.2.2",
 		"rename": "1.0.4",
 		"request-stats": "3.0.0",
 		"require-all": "3.0.0",
