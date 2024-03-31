@@ -95,7 +95,10 @@ export default defineComponent({
 
 	data() {
 		return {
-			emojilist,
+			SKIN_TONES_SAMPLE,
+			SKIN_TONES,
+			pinned: false,
+			emojilist: emojilist.filter(x => !x.v),
 			getStaticImageUrl,
 			customEmojis: {},
 			faGlobe, faHistory,
