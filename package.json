@@ -191,7 +191,7 @@
 		"web-push": "3.6.7",
 		"webpack": "5.91.0",
 		"webpack-cli": "5.1.4",
-		"websocket": "1.0.34",
+		"websocket": "1.0.35",
 		"xev": "2.0.1"
 	},
 	"devDependencies": {
