@@ -227,7 +227,7 @@
 		"@types/node": "20.10.8",
 		"@types/nodemailer": "6.4.15",
 		"@types/nprogress": "0.2.3",
-		"@types/oauth": "0.9.4",
+		"@types/oauth": "0.9.5",
 		"@types/parse5": "6.0.3",
 		"@types/parsimmon": "1.10.9",
 		"@types/portscanner": "2.1.4",
