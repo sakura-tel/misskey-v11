@@ -6156,10 +6156,10 @@ loader-runner@^4.2.0:
   resolved "https://registry.yarnpkg.com/loader-runner/-/loader-runner-4.2.0.tgz#d7022380d66d14c5fb1d496b89864ebcfd478384"
   integrity sha512-92+huvxMvYlMzMt0iIOukcwYBFpkYJdpl2xsZ7LrlayO7E8SOv+JJUEK17B/dJIHAOLMfh2dZZ/Y18WgmGtYNw==
 
-loader-utils@3.2.2:
-  version "3.2.2"
-  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-3.2.2.tgz#dc154c005c65974dab413195c16cd246f545aecb"
-  integrity sha512-vjJi4vQDasD8t0kMpxe+9URAcgbSuASqoj/Wuk3MawTk97LYa2KfdHreAkd1G/pmPLMvzZEw7/OsydADNemerQ==
+loader-utils@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-3.3.0.tgz#cc9b0c6413a97ecf3be026ac4322ed32bd36f2fa"
+  integrity sha512-LugZ5wJCsACYzc728QQ5J3SJ7G+3P6cLuFfdwWJRhOrJMkBMPIx5tDCT9Q9H99jTJIBddEywMrxNliGYqU4qRw==
 
 loader-utils@^1.0.2, loader-utils@^1.1.0:
   version "1.4.0"
