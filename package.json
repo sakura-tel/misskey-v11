@@ -106,7 +106,7 @@
 		"koa-slow": "2.1.0",
 		"koa-views": "8.0.0",
 		"langmap": "0.0.16",
-		"loader-utils": "3.2.2",
+		"loader-utils": "3.3.1",
 		"memoji": "mei23/memoji#15.0.2",
 		"moji": "0.5.1",
 		"ms": "2.1.3",
