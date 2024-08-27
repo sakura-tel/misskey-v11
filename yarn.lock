@@ -977,10 +977,10 @@
     "@types/qs" "*"
     "@types/serve-static" "*"
 
-"@types/fluent-ffmpeg@2.1.25":
-  version "2.1.25"
-  resolved "https://registry.yarnpkg.com/@types/fluent-ffmpeg/-/fluent-ffmpeg-2.1.25.tgz#af4fafc141a0856eef186f38acb1c1d6b7cd2394"
-  integrity sha512-a9/Jtv/RVaCG4lUwWIcuClWE5eXJFoFS/oHOecOv/RS8n+lQdJzcJVmDlxA8Xbk4B82YpO88Dijcoljb6sYTcA==
+"@types/fluent-ffmpeg@2.1.26":
+  version "2.1.26"
+  resolved "https://registry.yarnpkg.com/@types/fluent-ffmpeg/-/fluent-ffmpeg-2.1.26.tgz#b3d5353527269eb2fc4e90b3014e51d9c210caab"
+  integrity sha512-0JVF3wdQG+pN0ImwWD0bNgJiKF2OHg/7CDBHw5UIbRTvlnkgGHK6V5doE54ltvhud4o31/dEiHm23CAlxFiUQg==
   dependencies:
     "@types/node" "*"
 
