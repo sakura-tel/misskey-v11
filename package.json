@@ -121,7 +121,7 @@
 		"parsimmon": "1.18.1",
 		"pg": "8.11.5",
 		"portscanner": "2.2.0",
-		"postcss": "8.4.41",
+		"postcss": "8.4.44",
 		"postcss-loader": "7.3.4",
 		"private-ip": "2.3.4",
 		"probe-image-size": "7.2.3",
