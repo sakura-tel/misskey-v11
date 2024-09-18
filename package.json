@@ -41,7 +41,7 @@
 		"@fortawesome/vue-fontawesome": "2.0.10",
 		"@koa/cors": "4.0.0",
 		"@koa/multer": "3.0.2",
-		"@koa/router": "8.0.8",
+		"@koa/router": "13.1.0",
 		"@swc/core": "1.4.17",
 		"abort-controller": "3.0.0",
 		"animejs": "3.2.2",
