@@ -119,7 +119,7 @@
 		"os-utils": "0.0.14",
 		"parse5": "6.0.1",
 		"parsimmon": "1.18.1",
-		"pg": "8.11.5",
+		"pg": "8.13.0",
 		"portscanner": "2.2.0",
 		"postcss": "8.4.47",
 		"postcss-loader": "7.3.4",
