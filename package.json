@@ -57,7 +57,7 @@
 		"bull": "4.11.5",
 		"cacheable-lookup": "6.1.0",
 		"cafy": "15.2.1",
-		"cbor": "9.0.2",
+		"cbor": "10.0.2",
 		"chalk": "4.1.2",
 		"cli-highlight": "2.1.11",
 		"co-body": "6.1.0",
