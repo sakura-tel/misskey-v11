@@ -58,7 +58,7 @@
 		"cacheable-lookup": "6.1.0",
 		"cafy": "15.2.1",
 		"cbor": "9.0.2",
-		"chalk": "4.1.2",
+		"chalk": "5.4.0",
 		"cli-highlight": "2.1.11",
 		"co-body": "6.1.0",
 		"content-disposition": "0.5.4",
