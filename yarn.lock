@@ -6007,10 +6007,10 @@ jsprim@^2.0.2:
     json-schema "0.4.0"
     verror "1.10.0"
 
-jsrsasign@10.9.0:
-  version "10.9.0"
-  resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-10.9.0.tgz#cc3f316e7e4c112a976193f9d2c93deb5a0745ee"
-  integrity sha512-QWLUikj1SBJGuyGK8tjKSx3K7Y69KYJnrs/pQ1KZ6wvZIkHkWjZ1PJDpuvc1/28c1uP0KW9qn1eI1LzHQqDOwQ==
+jsrsasign@11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-11.1.0.tgz#195e788102731102fbf3e36b33fde28936f4bf57"
+  integrity sha512-Ov74K9GihaK9/9WncTe1mPmvrO7Py665TUfUKvraXBpu+xcTWitrtuOwcjf4KMU9maPaYn0OuaWy0HOzy/GBXg==
 
 jstransformer@1.0.0:
   version "1.0.0"
@@ -9344,7 +9344,6 @@ stylus@^0.59.0:
 
 "summaly@git+https://github.com/mei23/summaly.git#3.15.0":
   version "3.15.0"
-  uid "68c10a57a485dc0505dec52a03d2f8a1b3b3815f"
   resolved "git+https://github.com/mei23/summaly.git#68c10a57a485dc0505dec52a03d2f8a1b3b3815f"
   dependencies:
     cheerio "1.0.0"
