@@ -221,7 +221,7 @@
 		"@types/koa__multer": "2.0.7",
 		"@types/koa__router": "8.0.11",
 		"@types/lolex": "5.1.6",
-		"@types/mocha": "10.0.7",
+		"@types/mocha": "10.0.9",
 		"@types/node": "22.10.3",
 		"@types/nodemailer": "6.4.17",
 		"@types/nprogress": "0.2.3",
@@ -249,6 +249,6 @@
 		"@types/websocket": "1.0.10",
 		"eslint": "8.57.1",
 		"eslint-plugin-node": "11.1.0",
-		"mocha": "10.4.0"
+		"mocha": "10.8.2"
 	}
 }
