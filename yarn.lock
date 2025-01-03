@@ -852,10 +852,10 @@
   resolved "https://registry.yarnpkg.com/@redocly/config/-/config-0.17.1.tgz#2def04cecf440dd78c0f102f53f3444fac050768"
   integrity sha512-CEmvaJuG7pm2ylQg53emPmtgm4nW2nxBgwXzbVEHpGas/lGnMyN8Zlkgiz6rPw0unASg6VW3wlz27SOL5XFHYQ==
 
-"@redocly/openapi-core@1.26.1":
-  version "1.26.1"
-  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.26.1.tgz#d84299f09a3b4f8ca59bafcada7b4d4a040cf26b"
-  integrity sha512-xRuVZqMVRFzqjbUCpOTra4tbnmQMWsya996omZMV3WgD084Z6OWB3FXflhAp93E/yAmbWlWZpddw758AyoaLSw==
+"@redocly/openapi-core@1.27.0":
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/@redocly/openapi-core/-/openapi-core-1.27.0.tgz#b05b444b9d18c44dc907f33519107f6a2680ebf2"
+  integrity sha512-C3EU9NYbo7bCc9SduHrk6/liUuuBqVfJHOhfbscNCR1443Rdpz3s+bB2Xhso9mdQJT0JjklRn2WTANjavl2Zng==
   dependencies:
     "@redocly/ajv" "^8.11.2"
     "@redocly/config" "^0.17.0"
@@ -6686,28 +6686,14 @@ minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.2:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.0.1.tgz#fb9022f7528125187c92bd9e9b6366be1cf3415b"
-  integrity sha512-nLDxIFRyhDblz3qMuq+SoRZED4+miJ/G+tdDrjkkkRnjAsBexeGpgjLEQ0blJy7rHhR2b93rhQY4SvyWu9v03g==
-  dependencies:
-    brace-expansion "^2.0.1"
-
-minimatch@^5.1.6:
+minimatch@^5.0.1, minimatch@^5.1.6:
   version "5.1.6"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-5.1.6.tgz#1cfcb8cf5522ea69952cd2af95ae09477f122a96"
   integrity sha512-lKwV/1brpG6mBUFHtb7NUmtABCb2WZZmm2wNiOA5hAb8VdCS4B3dtMWyvcoViccwAW/COERjXLt0zP1zXUN26g==
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.1.tgz#8a555f541cf976c622daf078bb28f29fb927c253"
-  integrity sha512-0jWhJpD/MdhPXwPuiRkCbfYfSKp2qnn2eOc279qI7f+osl/l+prKSrvhg157zSYvx/1nmgn2NqdT6k2Z7zSH9w==
-  dependencies:
-    brace-expansion "^2.0.1"
-
-minimatch@^9.0.4:
+minimatch@^9.0.1, minimatch@^9.0.4:
   version "9.0.5"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-9.0.5.tgz#d74f9dd6b57d83d8e98cfb82133b03978bc929e5"
   integrity sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==
