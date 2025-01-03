@@ -580,6 +580,7 @@ common/views/components/note-menu.vue:
   detail: "Details"
   copy-content: "Copy the contents"
   copy-link: "Copy link"
+  copy-remote-link: "Copy original link"
   favorite: "Bookmarks this note"
   unfavorite: "Unbookmark"
   watch: "Watch"

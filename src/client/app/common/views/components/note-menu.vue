@@ -36,13 +36,21 @@ export default Vue.extend({
 					icon: 'link',
 					text: this.$t('copy-link'),
 					action: this.copyLink
-				}, this.note.uri ? {
-					icon: 'external-link-square-alt',
-					text: this.$t('remote'),
-					action: () => {
-						window.open(this.note.uri, '_blank');
-					}
-				} : undefined,
+				},
+				...(this.note.uri ? [
+					{
+						icon: 'link',
+						text: this.$t('copy-remote-link'),
+						action: this.copyRemoteLink
+					}, {
+						icon: 'external-link-square-alt',
+						text: this.$t('remote'),
+						action: () => {
+							window.open(this.note.uri, '_blank');
+						}
+					}]
+					: []
+				),
 				null,
 				this.isFavorited ? {
 					icon: 'star',
@@ -105,13 +113,21 @@ export default Vue.extend({
 					icon: 'link',
 					text: this.$t('copy-link'),
 					action: this.copyLink
-				}, this.note.uri ? {
-					icon: 'external-link-square-alt',
-					text: this.$t('remote'),
-					action: () => {
-						window.open(this.note.uri, '_blank');
-					}
-				} : undefined]
+				},
+				...(this.note.uri ? [
+					{
+						icon: 'link',
+						text: this.$t('copy-remote-link'),
+						action: this.copyRemoteLink
+					}, {
+						icon: 'external-link-square-alt',
+						text: this.$t('remote'),
+						action: () => {
+							window.open(this.note.uri, '_blank');
+						}
+					}]
+					: []
+				),]
 				.filter(x => x !== undefined);
 			}
 		}
@@ -145,6 +161,14 @@ export default Vue.extend({
 
 		copyLink() {
 			copyToClipboard(`${url}/notes/${this.note.id}`);
+			this.$root.dialog({
+				type: 'success',
+				splash: true
+			});
+		},
+
+		copyRemoteLink() {
+			copyToClipboard(this.note.url);
 			this.$root.dialog({
 				type: 'success',
 				splash: true

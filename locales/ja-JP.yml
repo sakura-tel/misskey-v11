@@ -623,6 +623,7 @@ common/views/components/note-menu.vue:
   detail: "詳細"
   copy-content: "内容をコピー"
   copy-link: "リンクをコピー"
+  copy-remote-link: "投稿元リンクをコピー"
   favorite: "ブックマーク"
   unfavorite: "ブックマーク解除"
   watch: "ウォッチ"
