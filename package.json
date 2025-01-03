@@ -196,7 +196,7 @@
 	},
 	"devDependencies": {
 		"@redocly/openapi-core": "1.26.1",
-		"@typescript-eslint/eslint-plugin": "6.21.0",
+		"@typescript-eslint/eslint-plugin": "7.0.0",
 		"@typescript-eslint/parser": "6.21.0",
 		"@types/bcryptjs": "2.4.6",
 		"@types/co-body": "6.1.3",
