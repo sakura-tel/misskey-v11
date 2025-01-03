@@ -109,11 +109,12 @@ export function toHtml(tokens: MfmForest | null, mentionedRemoteUsers: IMentione
 			const a = doc.createElement('a');
 			const { username, host, acct } = token.node.props;
 			switch (host) {
-				case 'github.com':
-					a.href = `https://github.com/${username}`;
-					break;
 				case 'twitter.com':
-					a.href = `https://twitter.com/${username}`;
+				case 'x.com':
+					a.href = `https://x.com/${username}`;
+					break;
+				case 'github.com':
+					a.href = `https://${host}/${username}`;
 					break;
 				default: {
 					const remoteUserInfo = mentionedRemoteUsers.find(remoteUser => remoteUser.username === username && remoteUser.host === host);

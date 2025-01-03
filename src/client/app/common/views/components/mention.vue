@@ -46,6 +46,8 @@ export default Vue.extend({
 		url(): string {
 			switch (this.host) {
 				case 'twitter.com':
+				case 'x.com':
+					return `https://x.com/${this.username}`;
 				case 'github.com':
 					return `https://${this.host}/${this.username}`;
 				default:
