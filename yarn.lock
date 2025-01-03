@@ -4976,14 +4976,13 @@ gulp-stylus@3.0.1:
     through2 "^4.0.2"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-swc@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-swc/-/gulp-swc-2.0.0.tgz#63dca02349ec1418dbecf3bd6d2ef399261c6144"
-  integrity sha512-7iTux9ken0d6YOga6qL1aoKWa7ImStdrhm2vby/r3l2c7VadPZBFfsk/eaanEh3Pu4PJPYhrF1P7XyF8dc1ndA==
+gulp-swc@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/gulp-swc/-/gulp-swc-2.2.0.tgz#d8000c9157461b395c21cfdff965663ab4ebe82b"
+  integrity sha512-NdjqfgD0/jDO0yU2ouJwdgUvM0mdU887kA3BmVEw/CbAwwHxseEQavp4zfgZRtwRWCCrN/8hTdQ59isH9oyQQw==
   dependencies:
     plugin-error "^2.0.1"
-    replace-ext "^2.0.0"
-    vinyl-sourcemaps-apply "^0.2.1"
+    source-map "^0.7.4"
 
 gulp-terser@2.1.0:
   version "2.1.0"
@@ -8484,7 +8483,7 @@ repeat-string@^1.6.1:
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
 
-replace-ext@2.0.0, replace-ext@^2.0.0:
+replace-ext@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/replace-ext/-/replace-ext-2.0.0.tgz#9471c213d22e1bcc26717cd6e50881d88f812b06"
   integrity sha512-UszKE5KVK6JvyD92nzMn9cDapSk6w/CaFZ96CnmDMUqH9oowfxF/ZjRITD25H4DnOQClLA4/j7jLGXXLVKxAug==
