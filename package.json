@@ -157,7 +157,7 @@
 		"stylus-loader": "8.1.1",
 		"summaly": "git+https://github.com/mei23/summaly.git#3.15.0",
 		"syslog-pro": "1.0.0",
-		"systeminformation": "5.24.8",
+		"systeminformation": "5.25.11",
 		"syuilo-password-strength": "0.0.1",
 		"terser-webpack-plugin": "5.3.11",
 		"textarea-caret": "3.1.0",
